@@ -80,3 +80,22 @@ F16:: ;close game
 WinActivate, ahk_exe RobloxPlayerBeta.exe
 Send, !{F4}
 return
+
+F17:: ;buy ak47, pumpgun and sniper
+MouseGetPos, xpos, ypos
+MouseMove, 1071, 558
+Loop, 3
+{
+    Send, {WheelDown}{WheelDown}
+    Sleep, 50
+}
+Click, 1309, 712
+Click, 756, 705
+Loop, 6
+{
+    Send, {WheelDown}{WheelDown}
+    Sleep, 50
+}
+Click, 1326, 705
+Click, 552, 360
+return
